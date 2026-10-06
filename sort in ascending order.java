@@ -1,3 +1,17 @@
+AIM
+
+To write a Java program to sort the given elements in ascending order using Bubble Sort.
+
+ALGORITHM
+Start the program.
+Read the number of elements n.
+Create an integer array of size n.
+Read the elements into the array.
+Compare adjacent elements using two for loops.
+If the first element is greater than the second, swap them.
+Repeat the process until all elements are sorted.
+Display the elements in ascending order.
+Stop the program.
 import java.util.Scanner;
 
 public class BubbleSort {
@@ -41,3 +55,15 @@ public class BubbleSort {
         sc.close();
     }
 }
+OUTPUT
+Enter the number of elements: 5
+Enter the elements:
+50
+20
+40
+10
+30
+Elements in ascending order:
+10 20 30 40 50
+RESULT
+Thus, the Java program to sort the given elements in ascending order using Bubble Sort was executed successfully and the desired result was obtained.
