@@ -1,4 +1,18 @@
-import java.io.*;
+AIM
+
+To write a Java program to demonstrate thread control methods such as yield(), sleep(), and stop() using multiple threads.
+
+ALGORITHM
+Start the program.
+Create three thread classes A, B, and C by extending the Thread class.
+In thread A, use yield() when i == 1 to temporarily give another thread a chance to execute.
+In thread B, display the values of j and terminate the thread when j == 3 using stop().
+In thread C, display the values of k and use sleep(1500) when k == 1 to pause the thread for 1.5 seconds.
+Create objects of all three threads in the main() method.
+Start the threads using start().
+Display the main thread termination message.
+Stop the program.
+    import java.io.*;
 class A extends Thread
 {
     public void run()
@@ -59,4 +73,27 @@ c.start();
 System.out.println("exit from main thread");
 }
 }
+OUTPUT
+
+Since threads execute concurrently, the exact order can vary. One possible output is:
+
+Start thread A
+exit from main thread
+from thread A i=1
+from thread A i=2
+from thread A i=3
+from thread A i=4
+from thread A i=5
+exit from A
+from thread B j=1
+from thread B j=2
+from thread B j=3
+exit from 5
+thread c=1
+thread c=2
+thread c=3
+thread c=4
+thread c=5
+RESULT
+Thus, the Java program to demonstrate thread control methods yield(), sleep(), and stop() was executed successfully and the desired output was obtained.
 
