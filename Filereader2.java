@@ -1,3 +1,17 @@
+AIM
+
+To write a Java program to read and display the contents of a file using the FileReader class.
+
+ALGORITHM
+Start the program.
+Import the java.io.* package.
+Create a FileReader object for the file sample5.txt.
+Read the file character by character using the read() method.
+Continue reading until read() returns -1, which indicates the end of the file.
+Convert each integer value into a character and display it using print().
+Close the file using close().
+Handle any exception using the catch block.
+Stop the program.
 import java.io.*;
 
 class Filereader2 {
@@ -20,3 +34,14 @@ class Filereader2 {
 
     }
 }
+sample5.txt contains:
+
+Welcome to Java
+File Handling Example
+
+ output :
+
+Welcome to Java
+File Handling Example
+RESULT
+Thus, the Java program to read and display the contents of a file using the FileReader class was executed successfully and the desired output was obtained.
